@@ -4,7 +4,7 @@ Site responsivo desenvolvido para o desafio da <strong>Khronos</strong>
 ## Executando o projeto
 1. Baixe o projeto
 ~~~
-git clone https://github.com/maiconhenriquefa/desafio-rocky.git
+git clone https://github.com/maiconhenriquefa/desafio-khronos.git
 ~~~
 2. Execute o projeto 
   - Abra o arquivo `index.html` no navegador de sua preferência
