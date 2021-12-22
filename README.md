@@ -14,3 +14,6 @@ git clone https://github.com/maiconhenriquefa/desafio-khronos.git
 - Função de JavaScript Puro (Carrossel)
 - Função de JavaScript Puro (Timer)
 - Utilização das principais Tags de SEO
+
+Se quiser somente acessar a página clique aqui:
+https://maiconhenriquefa.github.io/desafio-khronos/
