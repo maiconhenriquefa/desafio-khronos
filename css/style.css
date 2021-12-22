@@ -1,5 +1,9 @@
+/* Import font*/
 @import url(./fonts.css);
+/* Import responsive*/
+@import url(./responsive.css);
 
+/* Colors default: start*/
 :root {
   --color-yellow: #fecd3d;
   --color-forest-green: #228c22;
@@ -12,12 +16,16 @@
   --color-gainsboro: gainsboro;
   --color-white: #ffffff;
 }
+/* Colors default: end*/
 
+/* Important-start: font-size default root */
 html {
   font-size: 65.7%;
   font-family: 'Poppins Black';
 }
+/* Important-end: font-size default root */
 
+/* All configurations initial: start*/
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -30,6 +38,19 @@ body {
   padding: 0;
 }
 
+.container-second {
+  margin: 0 140px;
+  overflow: hidden;
+}
+/* All configurations initial: end*/
+
+/* accessibility img : start */
+img[alt] {
+  font-size: 2rem;
+}
+/* accessibility img : end */
+
+/* Header initial: start */
 #banner-initial {
   height: 3.5rem;
   width: 100%;
@@ -194,7 +215,9 @@ nav {
   margin-bottom: 1.5rem;
   background-color: var(--color-gray);
 }
+/* Header initial: end */
 
+/* Products slider default: start */
 .views-title {
   height: 10px;
   margin: 50px 0 30px 0;
@@ -215,9 +238,9 @@ nav {
   margin: 0 1px;
 }
 
-.container-second {
-  margin: 0 140px;
-  overflow: hidden;
+.arrow {
+  cursor: pointer;
+  align-self: center;
 }
 
 .views {
@@ -367,7 +390,9 @@ nav {
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
 }
+/* Products slider default: end */
 
+/* Banners: start */
 .banners {
   margin: 5rem 0 2rem 0;
   display: grid;
@@ -544,8 +569,10 @@ nav {
   font-size: 2.4rem;
   font-weight: 600;
 }
+/* Banners: end */
 
-.slide {
+/* Category slide: start */
+.container-slider {
   width: 100%;
   height: 130px;
   box-sizing: border-box;
@@ -598,12 +625,9 @@ nav {
   border: solid #888d80 2px;
   border-radius: 50%;
 }
+/* Category slide: end */
 
-.arrow {
-  cursor: pointer;
-  align-self: center;
-}
-
+/* Banner loja: start */
 .banners-loja {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -639,7 +663,9 @@ nav {
   font-size: 2.6rem;
   font-weight: 900;
 }
+/* Banner loja: end */
 
+/* Brands slider: start */
 .brands {
   position: relative;
   margin: 2rem 0 5rem 0;
@@ -685,7 +711,9 @@ nav {
 .brands .next {
   right: 0;
 }
+/* Brands slider: end */
 
+/* Footer: start */
 footer header {
   font-family: 'Poppins', sans-serif;
   background-color: var(--color-wine);
@@ -851,3 +879,4 @@ footer header .cadastro-submit button {
   color: #888d80;
   text-align: center;
 }
+/* Footer: end */

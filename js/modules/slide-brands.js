@@ -11,20 +11,26 @@ export default function initSliderBrands(container, parent) {
 
   // Start point
   let i = 0;
+
+  //Handle width an items: start
+  let items = 12;
+  let widthCont = sliderContainer.clientWidth;
+  let widthWindow = window.innerWidth;
+
+  if (widthWindow < 800) {
+    items = 6;
+  }
+  //Handle width an items: end
+
   //Handle next slider: start
   function changeNext() {
     // Set i equal number image
-    if (i < 12 - 7) {
+    if (i < items + 1) {
       // Add i
       i++;
     } else {
       // Reset i
       i = 0;
-    }
-    let items = 12;
-    let widthCont = sliderContainer.clientWidth;
-    if (widthCont < 1181) {
-      items = 6;
     }
     sliderContainer.style.transform = `translateX(${
       -i * (widthCont / items)
@@ -40,12 +46,7 @@ export default function initSliderBrands(container, parent) {
       i--;
     } else {
       // Reset i
-      i = 12 - 7;
-    }
-    let items = 12;
-    let widthCont = sliderContainer.clientWidth;
-    if (widthCont < 1181) {
-      items = 6;
+      i = items - 1;
     }
     sliderContainer.style.transform = `translateX(${
       -i * (widthCont / items)

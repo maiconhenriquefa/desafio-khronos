@@ -11,22 +11,28 @@ export default function initSliderCategory(container, parent) {
 
   // Start point
   let i = 0;
+
+  //Handle width an items: start
+  let items = 20;
+  let widthCont = sliderContainer.clientWidth;
+  let widthWindow = window.innerWidth;
+
+  if (widthWindow < 650) {
+    items = 8;
+  } else if (widthWindow < 800) {
+    items = 10;
+  }
+  //Handle width an items: end
+
   //Handle next slider: start
   function changeNext() {
     // Set i equal number image
-    if (i < 20 - 11) {
+    if (i < items / 2 - 1) {
       // Add i
       i++;
     } else {
       // Reset i
       i = 0;
-    }
-    let items = 20;
-    let widthCont = sliderContainer.clientWidth;
-    if (widthCont < 1060) {
-      items = 8;
-    } else if (widthCont < 1181) {
-      items = 10;
     }
     sliderContainer.style.transform = `translateX(${
       -i * (widthCont / items)
@@ -43,13 +49,6 @@ export default function initSliderCategory(container, parent) {
     } else {
       // Reset i
       i = 20 - 11;
-    }
-    let items = 20;
-    let widthCont = sliderContainer.clientWidth;
-    if (widthCont < 1060) {
-      items = 8;
-    } else if (widthCont < 1181) {
-      items = 10;
     }
     sliderContainer.style.transform = `translateX(${
       -i * (widthCont / items)

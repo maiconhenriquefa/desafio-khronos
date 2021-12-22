@@ -89,10 +89,6 @@
 /* Resize medium: end */
 /* Resize small: start */
 @media (max-width: 650px) {
-  html,
-  body {
-    font-size: 48%;
-  }
   .container-second {
     margin: 0;
   }
@@ -140,11 +136,11 @@
   .banners {
       row-gap: 3rem;
       grid-template-columns: 1fr;
-      grid-template-rows: 20rem 20rem 20rem 20rem;
+      grid-template-rows: 1fr 20rem 20rem;
   }
 
   .banner-header {
-    grid-row: 1/3;
+    grid-row: 1/2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -154,7 +150,7 @@
 
   .banner-content{
     grid-column: 1/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
     width: 100%;
   }
 
@@ -164,7 +160,7 @@
 
   .banner-aside {
     grid-column: 1/3;
-    grid-row: 4/5;
+    grid-row: 3/4;
   }
 
   footer header .cadastro-submit {
