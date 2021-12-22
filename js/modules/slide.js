@@ -24,7 +24,7 @@ export default function initSlider(container, parent) {
   //Handle next slider: start
   function changeNext() {
     // Set i equal number image
-    if (i < items + 1) {
+    if (i < items - 4) {
       // Add i
       i++;
     } else {
