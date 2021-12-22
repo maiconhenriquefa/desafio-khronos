@@ -1,0 +1,212 @@
+@import url(./style.css);
+
+/* Resize large: start */
+@media (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container-second {
+    margin: 0 40px;
+  }
+
+  footer header {
+    justify-content: center;
+  }
+}
+/* Resize large: end */
+/* Resize medium: start */
+@media (max-width: 800px) {
+  .header {
+    height: 115px;
+    box-sizing: border-box;
+    background: var(--color-wine);
+    color: var(--color-white);
+    padding: 1rem 1rem;
+  }
+
+  .header .header-contact {
+    justify-content: center;
+  }
+
+  .header .header-interacting {
+    padding-left: 0;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  #header-interacting-search-input {
+    width: 30rem;
+  }
+
+  .login {
+    width: 150px;
+  }
+
+  .product-sale .product-sale-description {
+    top: 30%;
+  }
+
+  .banner-header {
+    padding: 1rem;
+    margin-left: -2rem;
+  }
+
+  #banner-header-kit {
+    width: 16rem;
+  }
+
+  #banner-header-modelo p {
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 1.2rem;
+  }
+
+  #banner-header-modelo span {
+    letter-spacing: 4px;
+    font-size: 5rem;
+  }
+
+  .banner-header-times {
+    gap: 1rem;
+  }
+
+  .container-slider-category {
+    grid-template-columns: repeat(20, calc(90% / 10));
+    margin: 0 0 0 10px;
+    column-gap: 1%;
+  }
+
+  .banners-loja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+
+  .sobre {
+    padding: 4rem 6rem;
+}
+/* Resize medium: end */
+/* Resize small: start */
+@media (max-width: 650px) {
+  html,
+  body {
+    font-size: 48%;
+  }
+  .container-second {
+    margin: 0;
+  }
+
+  .header {
+    height: 200px;
+  }
+
+  .header .header-interacting {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .header-interacting #header-interacting-search-input {
+    width: 35rem;
+  }
+
+  .nav-bar li :not(.active,.atention){
+    display: none;
+  }
+
+  .products-views {
+    grid-template-columns: repeat(8, calc(98% / 2));
+    column-gap: 1%;
+    justify-items: center;
+
+  }
+  .product {
+    width: 30rem;
+  }
+
+  .container-slider-category {
+    grid-template-columns: repeat(20, calc(92% / 8));
+    margin: 0 0 0 5px;
+    column-gap: 1%;
+  }
+
+  .container-slider-brands {
+    grid-template-columns: repeat(12, calc(91% / 6));
+    column-gap: 1.5%;
+  }
+
+  .banners {
+      row-gap: 3rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 20rem 20rem 20rem 20rem;
+  }
+
+  .banner-header {
+    grid-row: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .banner-content{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    width: 100%;
+  }
+
+  .banner-content {
+    background-position: center;
+  }
+
+  .banner-aside {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  footer header .cadastro-submit {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: center;
+  }
+
+  footer header {
+    padding: 2rem 8rem;
+  }
+
+  .sobre {
+    padding: 4rem 8rem;
+    gap: 2rem;
+  }
+
+  .sobre-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
+  }
+
+  .sobre-info-redes {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 2rem 0;
+  }
+
+  .sobre-info-redes p {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sobre-info-redes-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* Resize small: end */
